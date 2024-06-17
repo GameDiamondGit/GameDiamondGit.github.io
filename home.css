@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background: black;
+}
+nav ul img {
+    height: 50px;
+    margin-right: 10px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li {
+    height: 50px;
+}
+nav a {
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    font-family: "Anton", sans-serif;
+}
+nav a:hover {
+    color: #0051ff;
+    transition: 0.25s;
+}
+.hero {
+    background: #252525;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Add this line */
+}
+.hero img {
+    width: 250px;
+}
+.hero h1 {
+    font-size: 50px;
+}
+.hero h1, .hero h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    color: white;
+}
+
+footer {
+    background: #252525;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
