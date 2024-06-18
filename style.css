@@ -1,78 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 nav {
-    background: black;
-}
-nav ul img {
-    height: 50px;
-    margin-right: 10px;
+    background: #172f7e;
+    height: 100px;
     width: 100%;
-    list-style: none;
     display: flex;
     justify-content: left;
     align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
-nav ul{
-    width: 100%;
+nav img {
+    height: 75px;
+    margin-right: 10px;
     list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
 }
-nav li {
-    height: 50px;
-}
-nav a {
-    height: 100%;
-    text-decoration: none;
+.nav-items a {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
     color: white;
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-    font-family: "Anton", sans-serif;
+    text-decoration: none;
+    padding: 10px;
 }
-nav a:hover {
-    color: #0051ff;
+.nav-items a:hover {
+    color: #96b7ff;
     transition: 0.25s;
 }
-.hero {
-    background: #252525;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Add this line */
-}
-.hero img {
-    width: 250px;
-}
-.hero h1 {
-    font-size: 50px;
-}
-.hero h1, .hero h2 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 800;
-    color: white;
-}
 
-footer {
-    background: #252525;
-    height: 100px;
+.games-catalog {
+    background: #172f7e;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 800;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    padding: 10px;
+}
+footer {
+    background: black;
+    height: 50px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+    }
 }
